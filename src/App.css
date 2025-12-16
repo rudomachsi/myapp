@@ -1,7 +1,14 @@
+body {
+  background-color:rgb(255, 0, 144)
+}
+
 .App-header {
   margin: 30px 0;
 }
 
+a{
+  color:blue
+}
 .App-logo {
   max-width: 200px;
   display: block;

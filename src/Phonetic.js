@@ -1,12 +1,16 @@
-//import react from "react";
+import react from "react";
+import "./Phonetic.css";
 
-export default function Phonetic({ text, audio }) {
+export default function Phonetic(props) {
+  console.log(props.phonetic);
   return (
-    <div>
-      {/* add rel="noreferrer noopener" when using target="_blank" */}
-      <a href={audio} target="_blank" rel="noreferrer noopener">
-        {text}
+
+    <div className="Phonetic">
+      <a href={props.phonetic.audio} target="_blank">
+        Listen
       </a>
+      <span className="text">{props.phonetic.text}</span>
+      {props.phonetic.text}
     </div>
   );
 }
