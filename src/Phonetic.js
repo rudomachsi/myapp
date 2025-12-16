@@ -6,8 +6,12 @@ export default function Phonetic(props) {
   return (
 
     <div className="Phonetic">
-      /* eslint-disable-next-line react/jsx-no-target-blank */
-      <a href={props.phonetic.audio} target="_blank">
+      return (
+  <div>
+
+  </div>
+);
+      <a href={props.phonetic.audio} target="_blank" rel="noopener">
         Listen
       </a>
       <span className="text">{props.phonetic.text}</span>
