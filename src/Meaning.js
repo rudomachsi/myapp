@@ -15,14 +15,14 @@ export default function Meaning(props) {
             <strong>Example: </strong>
             <em>{definition.example}</em>
 
-            <br/>
-            <strong>Synonyms: </strong>
-            <Synonyms synonyms={definition.synonyms}/>
-
+          
           <br/>
             <strong>Phonetics: </strong>
             <em>{definition.phonetic}</em>
         </p>
+        <strong>Synonyms: </strong>
+            <Synonyms synonyms={definition.synonyms}/>
+          <br/>
         </div>
       );
     })}
